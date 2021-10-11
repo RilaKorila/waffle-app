@@ -39,3 +39,6 @@ next.config.js
 
 # constants
 /constants
+
+# styled component
+/pages/_document.js
