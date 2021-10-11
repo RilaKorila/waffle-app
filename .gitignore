@@ -36,3 +36,6 @@ yarn-error.log*
 # TypeScript
 next-env.d.ts
 next.config.js
+
+# constants
+/constants
