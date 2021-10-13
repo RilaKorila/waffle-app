@@ -1,18 +1,18 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { Container, Footer, Main } from '../components/Layout'
 import styled from 'styled-components'
 
 
 const Title = styled.h1`
-  font-size: 1.5em;
+  font-size: 5.0em;
   text-align: center;
   color: palevioletred;
-`;
 
-const HighLight = styled.span`
-  color: red; 
+  >span{
+    color: red;
+  }
 `;
 
 const Card = styled.a`
@@ -33,12 +33,12 @@ margin: 1rem;
 
   >h2{
     margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 2.0rem;
   }
 
   >p{
     margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   }
 `;
@@ -57,33 +57,7 @@ display: flex;
   }
 `;
 
-const Footer = styled.footer`
-width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
 
-const Container = styled.div`
-min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  `;
-
-const Main = styled.main`
-padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
 
 const Home: NextPage = () => {
   return (
@@ -96,7 +70,7 @@ const Home: NextPage = () => {
 
       <Main>
         <Title>
-          Let's Enjoy <HighLight>Computer Science</HighLight>!
+          Let's Enjoy <span>Computer Science</span>!
         </Title>
 
         <Grid>
